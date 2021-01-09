@@ -59,12 +59,12 @@ namespace RegisterPages
 
         public void OnWaVerificationSucceed(object source, EventArgs e)
         {
-            throw new NotImplementedException();
+            labelKeteranganWa.Content = "Wa berhasil dikirim";
         }
 
         public void OnEmailVerificationSucceed(object source, EventArgs e)
         {
-            throw new NotImplementedException();
+            labelKeteranganEmail.Content = "Email berhasil dikirim";
         }
     }
 }
