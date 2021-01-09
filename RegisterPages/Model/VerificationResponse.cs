@@ -4,7 +4,9 @@ using System.Text;
 
 namespace RegisterPages.Model
 {
-    class VerificationResponse
+    interface VerificationResponse
     {
+        public void OnWaVerificationSucceed(object source, EventArgs e);
+        public void OnEmailVerificationSucceed(object source, EventArgs e);
     }
 }
