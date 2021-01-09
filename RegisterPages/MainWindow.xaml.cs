@@ -49,11 +49,12 @@ namespace RegisterPages
 
         private void OnCheckboxWhatsappUnhecked(object sender, RoutedEventArgs e)
         {
+            controller.UnsubscribeWAVerification();
         }
 
         private void OnCheckboxWhatsappChecked(object sender, RoutedEventArgs e)
         {
-
+            controller.SubscribeWAVerification();
         }
 
         public void OnWaVerificationSucceed(object source, EventArgs e)
