@@ -29,5 +29,14 @@ namespace RegisterPages
         {
 
         }
+
+        private void OnCheckboxEmailChecked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void OnCheckboxEmailUnchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
