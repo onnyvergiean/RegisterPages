@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegisterPages"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="355" Width="279">
+    <Grid x:Name="labelEmail">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="checkboxEmail" Content="Email" HorizontalAlignment="Left" Margin="36,165,0,0" VerticalAlignment="Top" Height="15" Width="48" Checked="OnCheckboxEmailChecked" Unchecked="OnCheckboxEmailUnchecked"/>
+        <CheckBox x:Name="checkboxWhatsapp" Content="Whatsapp" HorizontalAlignment="Left" Margin="163,165,0,0" VerticalAlignment="Top" Height="15" Width="73" Checked="OnCheckboxWhatsappChecked" Unchecked="OnCheckboxWhatsappUnhecked"/>
+        <Label Content="KIrim verifikasi ke" HorizontalAlignment="Left" Margin="33,136,0,0" VerticalAlignment="Top" Height="26" Width="102"/>
+        <Button x:Name="buttonDaftar" Content="Daftar" HorizontalAlignment="Left" Margin="32,198,0,0" VerticalAlignment="Top" Width="204" Height="20" Click="OnButtonDaftarClicked"/>
+        <Label Content="No. Hp" HorizontalAlignment="Left" Margin="32,105,0,0" VerticalAlignment="Top" Height="26" Width="47"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="32,79,0,0" VerticalAlignment="Top" Height="26" Width="38"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="32,56,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Margin="116,60,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="116,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="textBoxPhoneNumber" HorizontalAlignment="Left" Margin="116,109,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Label Content="Form Pendaftaran" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" Height="26" Width="104"/>
+        <Label x:Name="labelKeteranganEmail" Content="" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="205"/>
+        <Label x:Name="labelKeteranganWa" Content="" HorizontalAlignment="Center" Margin="0,261,0,0" VerticalAlignment="Top" Width="205"/>
 
     </Grid>
 </Window>
