@@ -24,5 +24,10 @@ namespace RegisterPages
         {
             InitializeComponent();
         }
+
+        private void OnButtonDaftarClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
