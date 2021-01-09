@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RegisterPages.Controller;
+using RegisterPages.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,16 +20,21 @@ namespace RegisterPages
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, VerificationResponse
     {
+        MainWindowController controller;
         public MainWindow()
         {
             InitializeComponent();
+            controller = new MainWindowController();
+            controller.SubcribeVerificationResult(this);
         }
 
         private void OnButtonDaftarClicked(object sender, RoutedEventArgs e)
         {
-
+            labelKeteranganEmail.Content = "";
+            labelKeteranganWa.Content = "";
+            controller.registeringUser(textBoxName.Text, textBoxEmail.Text, textBoxPhoneNumber.Text);
         }
 
         private void OnCheckboxEmailChecked(object sender, RoutedEventArgs e)
@@ -46,6 +53,16 @@ namespace RegisterPages
         private void OnCheckboxWhatsappChecked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        public void OnWaVerificationSucceed(object source, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnEmailVerificationSucceed(object source, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
