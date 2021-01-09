@@ -38,5 +38,14 @@ namespace RegisterPages
         {
 
         }
+
+        private void OnCheckboxWhatsappUnhecked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void OnCheckboxWhatsappChecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
