@@ -39,11 +39,12 @@ namespace RegisterPages
 
         private void OnCheckboxEmailChecked(object sender, RoutedEventArgs e)
         {
+            controller.SubscribeEmailVerification();
         }
 
         private void OnCheckboxEmailUnchecked(object sender, RoutedEventArgs e)
         {
-
+            controller.UnsubscribeEmailVerification();
         }
 
         private void OnCheckboxWhatsappUnhecked(object sender, RoutedEventArgs e)
